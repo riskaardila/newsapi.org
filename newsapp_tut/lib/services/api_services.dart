@@ -13,7 +13,8 @@ class ApiService {
 
   // NOTE: make sure to use your owm apikey, you can make a free acount and
   // choose a developer option
-  final endPointUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=7bc9f5bb1fca4f139e60be3e7060d1e6";
+  final endPointUrl =
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=7bc9f5bb1fca4f139e60be3e7060d1e6";
   // now let's create the http request function
   // but first let's import the http package
 

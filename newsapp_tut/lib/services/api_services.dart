@@ -13,12 +13,12 @@ class ApiService {
 
   // NOTE: make sure to use your owm apikey, you can make a free acount and
   // choose a developer option
-  final endPointUrl = "https://newsapi.org/v2/everything?q=tesla&from=2021-04-27&sortBy=publishedAt&apiKey=7bc9f5bb1fca4f139e60be3e7060d1e6";
+  final endPointUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=7bc9f5bb1fca4f139e60be3e7060d1e6";
   // now let's create the http request function
   // but first let's import the http package
 
   Future<List<Article>> getArticle() async {
-    Response res = await get(endPointUrl);
+    Response res = await get(Uri.parse(endPointUrl));
 
     //first of all let's check that we got a 200 status code: this mean that the request was a succes
     if (res.statusCode == 200) {
